@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- crea boton introducir nombre /para poder acceder a los datos desde js mediante el id-->
+    <input type="text" id="nombre" placeholder ="inserte un nobre"  >
+
+    <!-- da funcion al boton llamando a la funcion guardarNombre()-que creamos en js -->
+    <button onclick="guardarNombre()">Guardar</button>
+    
+    <!-- da funcion al boton llamando a la funcion jugar()-que creamos en js -->
+    <button onclick="jugar()">Jugar con los valores creados previamente</button>
+
+    <!-- <div id="miSaludo">Por favor escriba el nombre</div> -->
+    <ul id="listadoNombresBoton"></ul>
+
+    <!-- donde se escriben los datos que recibe del boton id=nombre que almacenamos (creando una lista con <li> usando la variable let = listadoNombres en js -->
+<p id="campos"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
